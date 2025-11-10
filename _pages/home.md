@@ -217,7 +217,7 @@ t {
     🗓️ Submission Deadline: <strong>January 31st</strong>
   </div>
   <br><br>
-  <a href="/register/" class="btn btn-purple">Submit Your Session</a>
+  <a href="Durham-HPC-Days-2026/register/" class="btn btn-purple">Submit Your Session</a>
 
 <br><br>
 </section>
