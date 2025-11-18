@@ -204,7 +204,7 @@ t {
 </style>
 
 <section id="about" class="fade-in">
-  <h2>💡 About the Event - 15th to 19th of June</h2>
+  <h2>💡  15th to 19th of June 2026</h2>
   <t>
     The <strong>Durham HPC Days</strong> bring together researchers, developers, and practitioners
     to explore the frontiers of high-performance computing, data analysis, and scientific innovation.
