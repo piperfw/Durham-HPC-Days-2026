@@ -6,7 +6,7 @@ classes: [full-programme]
 ---
 
 <style>
-/* Match homepage visual style */
+
 body {
   font-family: 'Inter', sans-serif;
   scroll-behavior: smooth;
@@ -178,9 +178,8 @@ p, t {
   </p>
 
   <div class="image-grid">
-    <img src="https://github.com/hpc-days/Durham-HPC-Days-2026/blob/main/assets/images/social.png?raw=true" alt="HPC Days 2025 Photo 1">
-    <img src="https://github.com/hpc-days/Durham-HPC-Days-2026/blob/main/assets/images/stickers.jpg?raw=true" alt="HPC Days 2025 Photo 2">
-    <img src="https://github.com/hpc-days/Durham-HPC-Days-2026/blob/main/assets/images/food-truck.jpg?raw=true" alt="HPC Days 2025 Photo 3">
+    <img src="https://github.com/hpc-days/Durham-HPC-Days-2026/blob/main/assets/images/social.png?raw=true" alt="HPC Days 2023 Photo 1">
+    <img src="https://github.com/hpc-days/Durham-HPC-Days-2026/blob/main/assets/images/stickers.jpg?raw=true" alt="HPC Days 2023 Photo 2">
   </div>
   
 </section>
