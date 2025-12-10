@@ -9,9 +9,9 @@ permalink: /register/
   width: 100vw;
   margin-left: calc(50% - 50vw);
   height: 50vh;
-  background-image: url("https://github.com/hpc-days/Durham-HPC-Days-2026/blob/main/assets/images/cathedral-cartoon.png?raw=true");
+  background-image: url("https://github.com/hpc-days/Durham-HPC-Days-2026/blob/main/assets/images/cathedral-darker.png?raw=true");
   background-attachment: fixed;
-  background-position: 50% 40%;
+  background-position: 120% 80%;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -28,12 +28,13 @@ permalink: /register/
   box-shadow: 0 15px 40px rgba(0,0,0,0.40);
 }
 
-.parallax-overlay h1 {
+.parallax-hero h1 {
   font-size: 4rem;
   margin-bottom: 0.5rem;
+  color: white;
 }
 
-.parallax-overlay p {
+.parallax-hero p {
   font-size: 1.3rem;
   opacity: 0.95;
 }
@@ -189,10 +190,7 @@ ul.checklist li::before {
 
 
 <section class="parallax-hero">
-  <div class="parallax-overlay">
     <h1>Register</h1>
-    <p>Durham HPC Days 2026</p>
-  </div>
 </section>
 
 
