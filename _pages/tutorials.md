@@ -12,7 +12,7 @@ classes: wide
   margin-right: calc(50% - 50vw);
 
   height: 50vh;
-  background-image: url("https://github.com/hpc-days/Durham-HPC-Days-2026/blob/main/assets/images/market-road.png?raw=true");
+  background-image: url("https://github.com/hpc-days/Durham-HPC-Days-2026/blob/main/assets/images/market-road-darker.png?raw=true");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
