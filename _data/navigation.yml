@@ -6,7 +6,7 @@ main:
   - title: "Tutorials"
     url: /tutorials/
     children:
-    - title: "Node-level performance optimisation "
+    - title: "Node-level performance optimisation"
       url: tutorials/node-level-performance-optimisation/
     - title: "NVIDIA Multi-GPU Programming"
       url: tutorials/nvidia-multi-gpu-programming/
