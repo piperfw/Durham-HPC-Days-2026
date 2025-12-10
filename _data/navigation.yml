@@ -5,12 +5,6 @@ main:
     url: /call-for-sessions/
   - title: "Tutorials"
     url: /tutorials/
-    children:
-      {% assign tutorials = site.tutorials | sort: "title" %}
-      {% for tutorial in tutorials %}
-      - title: "{{ tutorial.title }}"
-        url: "{{ tutorial.url | relative_url }}"
-      {% endfor %}
   - title: "Programme"
     url: /programme-empty/
   - title: "Sponsors"

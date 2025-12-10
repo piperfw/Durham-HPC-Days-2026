@@ -9,27 +9,38 @@
       <a class="home-btn" href="{{ '/' | relative_url }}">Home</a>
     </div>
 
-    <!-- RIGHT SIDE: NAVIGATION -->
     <nav class="site-nav">
-      <ul class="site-nav__list">
-        {% assign nav = site.data.navigation.main %}
-        {% for item in nav %}
-          <li class="site-nav__item {% if item.children %}has-submenu{% endif %}">
-            <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+  <ul class="site-nav__list">
+    {% assign nav = site.data.navigation.main %}
+    {% for item in nav %}
+      <li class="site-nav__item {% if item.children or item.title == 'Tutorials' %}has-submenu{% endif %}">
+        {% if item.title == 'Tutorials' %}
+          <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+          <ul class="submenu">
+            {% assign tutorials = site.tutorials | sort: "title" %}
+            {% for tutorial in tutorials %}
+              <li class="submenu__item">
+                <a href="{{ tutorial.url | relative_url }}">{{ tutorial.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% elsif item.children %}
+          <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+          <ul class="submenu">
+            {% for child in item.children %}
+              <li class="submenu__item">
+                <a href="{{ child.url | relative_url }}">{{ child.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
 
-            {% if item.children %}
-              <ul class="submenu">
-                {% for child in item.children %}
-                  <li class="submenu__item">
-                    <a href="{{ child.url | relative_url }}">{{ child.title }}</a>
-                  </li>
-                {% endfor %}
-              </ul>
-            {% endif %}
-          </li>
-        {% endfor %}
-      </ul>
-    </nav>
 
   </div>
 </div>
