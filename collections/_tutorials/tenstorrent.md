@@ -1,6 +1,6 @@
 ---
 layout: tutorial
-title: "Tensorrent"
+title: "Tenstorrent"
 lecturers: "Eric Duffy, Felix LeClair, Tenstorrent and Nick Brown"
 institutions: "EPCC"
 description: >
