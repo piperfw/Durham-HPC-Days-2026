@@ -6,14 +6,11 @@ main:
   - title: "Tutorials"
     url: /tutorials/
     children:
-    - title: "Node-level performance optimisation"
-      url: tutorials/node-level-performance-optimisation/
-    - title: "NVIDIA Multi-GPU Programming"
-      url: tutorials/nvidia-multi-gpu-programming/
-    - title: "Green HPC"
-      url: tutorials/green-hpc/
-    - title: "Tensorrent"
-      url: tutorials/tensorrent/
+      {% assign tutorials = site.tutorials | sort: "title" %}
+      {% for tutorial in tutorials %}
+      - title: "{{ tutorial.title }}"
+        url: "{{ tutorial.url | relative_url }}"
+      {% endfor %}
   - title: "Programme"
     url: /programme-empty/
   - title: "Sponsors"
