@@ -126,7 +126,7 @@ classes: wide
   {% for tutorial in tutorials %}
     <div class="about-card">
       <div class="card-title">{{ tutorial.title }}</div>
-      <a href="{{ tutorial.url }}" class="about-button">View Tutorial</a>
+      <a href="Durham-HPC-Days-2026{{ tutorial.url }}" class="about-button">View Tutorial</a>
     </div>
   {% endfor %}
 </section>
