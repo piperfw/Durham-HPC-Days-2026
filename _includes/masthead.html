@@ -154,10 +154,10 @@
   transform: translateY(0px);
 }
 
-.masthead__mobile-toggle {
-  display: none;
-}
+/* --- Existing desktop styles, unchanged --- */
 
+/* Mobile toggle button */
+.masthead__mobile-toggle { display: none; }
 #mobile-menu-btn {
   font-size: 1.5rem;
   background: none;
@@ -166,57 +166,42 @@
   color: #68246D;
 }
 
+/* Mobile styles */
 @media (max-width: 900px) {
-  .masthead__inner-wrap {
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+  .masthead__inner-wrap { flex-wrap: wrap; justify-content: space-between; }
+  .masthead__mobile-toggle { display: block; }
 
-  .site-nav__list {
-    flex-direction: column;
-    width: 100%;
-    display: none; /* hide menu by default */
-    margin-top: 0.5rem;
-    background: #fff;
+  /* hide nav initially on mobile */
+  .site-nav__list { 
+    flex-direction: column; 
+    width: 100%; 
+    display: none; 
+    margin-top: 0.5rem; 
+    background: #fff; 
     border-top: 1px solid #ddd;
   }
 
-  .site-nav__item {
-    width: 100%;
-  }
+  .site-nav__item { width: 100%; }
+  .site-nav__item > a { display: block; padding: 0.8rem 1rem; border-bottom: 1px solid #eee; }
 
-  .site-nav__item > a {
-    display: block;
-    padding: 0.8rem 1rem;
-    border-bottom: 1px solid #eee;
-  }
-
-  .site-nav__item:hover > .submenu,
-  .has-submenu:hover > .submenu {
+  /* Submenus */
+  .submenu {
     position: relative;
     top: 0;
     left: 0;
-    display: block;
+    display: none;
     opacity: 1;
     transform: none;
     border: none;
     box-shadow: none;
-  }
-
-  .submenu {
     padding-left: 1rem;
-    display: none; /* hidden by default */
   }
-
-  .submenu__item a {
-    padding: 0.6rem 1rem;
-  }
-
-  .masthead__mobile-toggle {
-    display: block;
-  }
+  .submenu__item a { padding: 0.6rem 1rem; }
 }
+
+
 </style>
+
 
 <script>
 const btn = document.getElementById('mobile-menu-btn');
@@ -236,7 +221,7 @@ document.querySelectorAll('.has-submenu > a').forEach(link => {
     }
   });
 });
+</script>
 
-</style>
 
 
