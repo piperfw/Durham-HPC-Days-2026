@@ -133,17 +133,16 @@ classes: [full-programme]
      
      
 <style>
-/* ======== Container ======== */
+
 .programme-container {
   display: flex;
   gap: 2rem;
 }
 
-/* Container principal */
 .programme-container {
   display: flex;
   gap: 1rem;
-   padding-top: 4rem; /* separación inicial desde arriba */
+   padding-top: 4rem; 
 }
 
 /* Sidebar acordeón */
@@ -177,17 +176,15 @@ classes: [full-programme]
   opacity: 1;
 }
 
-
-/* Main content */
 .programme-main {
   flex: 1;
 }
 
-/* ======== Main ======== */
 .programme-main {
   flex: 1;
 }
-/* Layout general */
+
+
 .full-programme .page__inner-wrap,
 .full-programme .page__content {
   max-width: none !important;
@@ -227,7 +224,6 @@ classes: [full-programme]
   box-shadow: 0 1px 4px rgba(0,0,0,0.08);
 }
 
-/* Columna izquierda (horas) */
 .time-label {
   font-weight: 800;
   font-size: 0.8rem;
@@ -239,7 +235,6 @@ classes: [full-programme]
   text-align: center;
 }
 
-/* Tarjetas de sesión */
 .session-card {
   background: #ffffff;
   border: 1px solid #dce3ec;
@@ -391,10 +386,10 @@ font-size: 0.6rem;
   color: #002A41;
   padding: 0.3rem 0.5rem;
   font-size: 1rem;
-  white-space: nowrap;      /* evita saltos de línea */
-  overflow: hidden;         /* oculta el texto que se pasa */
-  text-overflow: ellipsis;  /* muestra puntos suspensivos (…) */
-  max-width: 200px;         /* ajusta el ancho máximo visible */
+  white-space: nowrap;      
+  overflow: hidden;         
+  text-overflow: ellipsis;  
+  max-width: 200px;
 }
 
 .accordion-header:hover {
@@ -626,13 +621,11 @@ font-size: 0.6rem;
 
 
 
-/* Para sesiones divididas (parte 1/2) */
 .session-card.split-session {
   border: 2px solid #DACDA2;
   transition: box-shadow 0.3s ease, transform 0.2s ease;
 }
 
-/* Hover sincronizado */
 .session-card.split-session:hover,
 .session-card.split-session.hover-pair {
   box-shadow: 0 0 12px #DACDA2;

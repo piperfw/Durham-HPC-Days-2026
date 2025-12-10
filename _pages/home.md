@@ -246,7 +246,6 @@ t {
     word-wrap: break-word;
   }
 
-  /* Dual cards stack */
   .dual-cards {
     grid-template-columns: 1fr;
     gap: 1.5rem;
@@ -267,7 +266,6 @@ t {
     max-width: none;
   }
 
-  /* Image grid stack */
   .image-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -276,7 +274,6 @@ t {
     height: auto;
   }
 
-  /* Section headings */
   section h2 {
     font-size: 1.5rem;
     line-height: 1.8rem;
@@ -284,6 +281,17 @@ t {
   section p, t {
     font-size: 0.95rem;
     line-height: 1.4rem;
+  }
+    .hero-content {
+    padding: 1rem;
+  }
+  .hero-content .btn {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0.5rem auto;
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
   }
 
   /* Fade-in elements spacing */

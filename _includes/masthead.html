@@ -4,7 +4,6 @@
 <div class="masthead">
   <div class="masthead__inner-wrap">
 
-    <!-- LEFT SIDE: HOME BUTTON -->
     <div class="masthead__home">
       <a class="home-btn" href="{{ '/' | relative_url }}">Home</a>
     </div>
@@ -154,6 +153,89 @@
   opacity: 1;
   transform: translateY(0px);
 }
+
+.masthead__mobile-toggle {
+  display: none;
+}
+
+#mobile-menu-btn {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #68246D;
+}
+
+@media (max-width: 900px) {
+  .masthead__inner-wrap {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .site-nav__list {
+    flex-direction: column;
+    width: 100%;
+    display: none; /* hide menu by default */
+    margin-top: 0.5rem;
+    background: #fff;
+    border-top: 1px solid #ddd;
+  }
+
+  .site-nav__item {
+    width: 100%;
+  }
+
+  .site-nav__item > a {
+    display: block;
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid #eee;
+  }
+
+  .site-nav__item:hover > .submenu,
+  .has-submenu:hover > .submenu {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    opacity: 1;
+    transform: none;
+    border: none;
+    box-shadow: none;
+  }
+
+  .submenu {
+    padding-left: 1rem;
+    display: none; /* hidden by default */
+  }
+
+  .submenu__item a {
+    padding: 0.6rem 1rem;
+  }
+
+  .masthead__mobile-toggle {
+    display: block;
+  }
+}
+</style>
+
+<script>
+const btn = document.getElementById('mobile-menu-btn');
+const menu = document.querySelector('.site-nav__list');
+
+btn.addEventListener('click', () => {
+  menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+});
+
+// Submenu toggle on mobile
+document.querySelectorAll('.has-submenu > a').forEach(link => {
+  link.addEventListener('click', e => {
+    if(window.innerWidth <= 900) {
+      e.preventDefault();
+      const submenu = link.nextElementSibling;
+      submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+    }
+  });
+});
 
 </style>
 
