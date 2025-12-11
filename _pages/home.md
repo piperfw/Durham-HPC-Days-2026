@@ -298,9 +298,30 @@ t {
   .fade-in {
     margin: 1rem 0;
   }
+
+.hero-content .btn-mobile-only {
+  display: none;
 }
 
-@media (max-width: 500px) {
+
+}
+
+
+@media (max-width: 768px) {
+  .hero-content h1,
+  .hero-content p,
+  .hero-content a.btn:not(.btn-mobile-only) {
+    display: none;
+  }
+
+  .hero-content .btn-mobile-only {
+    display: inline-block;
+    font-size: 1.1rem;
+    padding: 0.9rem 2rem;
+    margin: 0 auto;
+    
+  }
+
   .hero-content h1 {
     font-size: 1.3rem;
     line-height: 1.5rem;
@@ -316,6 +337,28 @@ t {
     font-size: 0.9rem;
     padding: 0.6rem 1rem;
   }
+  
+  .hero-inner::before {
+  background: rgba(0, 0, 0, 0.5); /* antes estaba 0.2 */
+  z-index: 1;
+}
+
+
+.hero-content h1,
+.hero-content p,
+.hero-content .btn {
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+.hero-content .btn {
+  background: rgba(0,42,65,0.85);
+}
+.hero-content .btn.btn-purple {
+  background: rgba(104,36,109,0.85);
+}
+
+
+
 }
 
 
@@ -358,14 +401,16 @@ t {
       <div id="yt-player"></div>
     </div>
     <div class="hero-content">
+      <!-- Contenido original -->
       <h1>Durham HPC Days 2025 Video Recap</h1>
       <p>Take a look back at Durham HPC Days 2025 in this short recap featuring our keynote speakers.</p>
-      <a href="https://youtu.be/wPjtwACmaUg" class="btn" target="_blank" rel="noopener">View Video</a>
-       <a href="https://durham.readthedocs.io/en/latest/hpcdays2025/index.html" class="btn" target="_blank" rel="noopener">Visit last year's website</a>
+     
+      <a href="https://durham.readthedocs.io/en/latest/hpcdays2025/index.html" class="btn" target="_blank" rel="noopener">Visit last year's website</a>
+
+      <a href="https://youtu.be/wPjtwACmaUg" class="btn btn-mobile-only" target="_blank" rel="noopener">HPC Days 2025 Video</a>
     </div>
   </div>
 </div>
-
 
 
 <div class="header-image"></div>

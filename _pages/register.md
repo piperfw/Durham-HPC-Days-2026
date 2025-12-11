@@ -132,56 +132,12 @@ ul.checklist li::before {
 }
 
 
-/* MOBILE */
-@media (max-width: 768px) {
-
-  .parallax-overlay {
-    padding: 2rem;
-    width: 95%;
-  }
-
-  .parallax-overlay h1 {
-    font-size: 2.5rem;
-  }
-
-  .parallax-overlay p {
-    font-size: 1.2rem;
-  }
-
-  .card-highlight {
-    padding: 2.2rem;
-  }
-
-  .card-highlight h2 {
-    font-size: 1.9rem;
-  }
-
-  .section-register {
-    padding: 2rem 1.2rem;
-  }
-
-}
 
 @media (max-width: 768px) {
-  .parallax-overlay {
-    padding: 2rem;
-    width: 95%;
-  }
-
-  .parallax-overlay h1 {
-    font-size: 2.5rem;
-  }
-
-  .parallax-overlay p {
-    font-size: 1.2rem;
-  }
-
-  .card-highlight {
-    padding: 2.5rem 2rem;
-  }
-
-  .card-highlight h2 {
-    font-size: 1.9rem;
+  .parallax-hero {
+    background-attachment: scroll; 
+    background-position: center top; 
+    height: 40vh;                  
   }
 }
 

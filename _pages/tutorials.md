@@ -107,6 +107,17 @@ classes: wide
   background: #4e1a53;
   transform: scale(1.05);
 }
+
+
+@media (max-width: 768px) {
+  .parallax-hero {
+    background-attachment: scroll; 
+    background-position: center top; 
+    height: 40vh;                  
+  }
+}
+
+
 </style>
 
 <section class="parallax-hero">

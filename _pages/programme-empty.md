@@ -40,12 +40,13 @@ classes: [full-programme]
   <!-- Main content -->
   <main class="programme-main">
     {% for current_day in days_order %}
-      {% assign day_sessions = sessions | where: "day", current_day | sort: "start_time" %}
-      {% if day_sessions != empty %}
-      <section class="programme-day" id="{{ current_day | downcase }}">
-        <h2>{{ current_day }}</h2>
-
-        <div class="programme-grid">
+  {% assign day_sessions = sessions | where: "day", current_day | sort: "start_time" %}
+  {% if day_sessions != empty %}
+    <section class="programme-day expanded" id="{{ current_day | downcase }}">
+      <h2 class="day-toggle">
+  <span class="arrow">&gt;</span> {{ current_day }}
+</h2>
+<div class="programme-grid">
           {% assign grouped_by_time = day_sessions | group_by: "start_time" %}
           {% for time_slot in grouped_by_time %}
             {% assign first_session = time_slot.items | first %}
@@ -145,7 +146,7 @@ classes: [full-programme]
    padding-top: 4rem; 
 }
 
-/* Sidebar acordeón */
+
 .programme-sidebar {
   flex: 0 0 250px;
   background: #f4f6f8;
@@ -194,8 +195,8 @@ classes: [full-programme]
 }
 
 .programme-day {
-  margin-bottom: 1rem;
-  padding: 1rem 3%;
+ margin: 0 0 1rem 0; 
+  padding: 0.5rem 3%;  
 }
 
 .programme-day h2 {
@@ -204,9 +205,11 @@ classes: [full-programme]
   color: #002A41;
   border-bottom: 2px solid #dce3ec;
   padding-bottom: 0.3rem;
+  margin: 0 0 0.5rem 0; 
+  padding-bottom: 0.3rem;
 }
 
-/* Estructura principal */
+
 .programme-grid {
   display: flex;
   flex-direction: column;
@@ -334,7 +337,6 @@ font-size: 0.6rem;
   text-decoration: underline;
 }
 
-/* En caso de que no haya sesión en un track */
 .no-session {
   text-align: center;
   color: #aaa;
@@ -397,7 +399,7 @@ font-size: 0.6rem;
 }
 
 .accordion-item.active .accordion-header {
-  color: #68246D; /* color cuando está activo */
+  color: #68246D; 
 }
 
 .arrow {
@@ -433,18 +435,6 @@ font-size: 0.6rem;
 .accordion-item.active .accordion-content {
   max-height: 500px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -632,6 +622,77 @@ font-size: 0.6rem;
   transform: scale(1.05);
 }
 
+@media (max-width: 768px) {
+   .programme-sidebar {
+    display: none;
+  }
+
+  .programme-main {
+    flex: 1 1 100%;
+    padding: 0 1rem;
+  }
+  
+  .programme-time {
+    display: grid;
+    grid-template-columns: 0.75fr 2.25fr 2.25fr;
+    gap: 0.5rem;
+    align-items: stretch; 
+  }
+
+  .time-label,
+    .time-label {
+    text-align: center;
+    background: #002A41;
+    color: #fff;    
+    border-radius: 8px;
+  }
+  .session-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0.5rem;
+  }
+
+ .programme-day .programme-grid {
+    max-height: 0;             
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+  .programme-day.expanded .programme-grid {
+    max-height: 2000px;        
+  }
+  .day-toggle {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    background: #f4f6f8;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+     margin: 0 0 1rem 0; 
+  padding: 0.5rem 3%;  
+  }
+
+  .day-toggle .arrow {
+    display: inline-block;
+    margin-right: 0.5rem;
+    transition: transform 0.3s ease;
+  }
+
+  .programme-day.expanded .arrow {
+    transform: rotate(90deg);
+  }
+
+
+}
+
+@media (min-width: 769px) {
+  .day-toggle .arrow {
+    display: none;
+  }
+}
 </style>
 
 <script>
@@ -645,16 +706,39 @@ document.querySelectorAll('.accordion-header').forEach(header => {
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-  const sessions = document.querySelectorAll(".session-card[data-part]");
-  sessions.forEach(card => {
-    const partId = card.dataset.part;
-    const pair = document.querySelectorAll(`.session-card[data-part='${partId}']`);
-    card.addEventListener("mouseenter", () => {
-      pair.forEach(c => c.classList.add("hover-pair"));
+
+  function initMobileAccordion() {
+    if (window.innerWidth <= 768) { 
+      // expandir todos al cargar
+      document.querySelectorAll('.programme-day').forEach(day => {
+        day.classList.add('expanded');
+      });
+
+      // toggle
+      document.querySelectorAll('.day-toggle').forEach(header => {
+        header.addEventListener('click', toggleDay);
+      });
+    } else {
+      // desktop: quitar event listeners
+      document.querySelectorAll('.day-toggle').forEach(header => {
+        header.removeEventListener('click', toggleDay);
+      });
+    }
+  }
+
+  function toggleDay(event) {
+    const daySection = event.currentTarget.closest('.programme-day');
+    daySection.classList.toggle('expanded');
+  }
+
+  initMobileAccordion();
+
+  window.addEventListener('resize', () => {
+    document.querySelectorAll('.programme-day').forEach(day => {
+      day.classList.remove('expanded');
     });
-    card.addEventListener("mouseleave", () => {
-      pair.forEach(c => c.classList.remove("hover-pair"));
-    });
+    initMobileAccordion();
   });
+
 });
 </script>
