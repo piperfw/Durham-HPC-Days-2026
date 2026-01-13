@@ -55,7 +55,6 @@ We invite submissions for stand-alone presentations covering topics in HPC and c
 The talk format should typically be <strong>15 minutes + 5 minutes</strong> for questions. Submissions should include a talk title, an abstract (approximately 300 words), and the speaker’s name and affiliation.
 <br><br>
 The final submission deadline will be <strong>13 March 2026</strong>.
-
     </p>
     
       <div style="text-align: center; background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 12px;">
