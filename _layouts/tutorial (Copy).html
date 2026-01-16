@@ -32,26 +32,13 @@ layout: default
       </div>
     {% endif %}
 
-            {% if page.start_time %}
+        {% if page.start_time %}
       <div class="sidebar-section">
-        <h3>Time Part 1</h3>
-        <p>{{ page.start_time_1 }} - {{ page.end_time_1 }}</p>
+        <h3>Time</h3>
+        <p>{{ page.start_time }} - {{ page.end_time }}</p>
       </div>
     {% endif %}
     
-            {% if page.start_time %}
-      <div class="sidebar-section">
-        <h3>Time Part 2</h3>
-        <p>{{ page.start_time_2 }} - {{ page.end_time_2 }}</p>
-      </div>
-    {% endif %}
-    
-                {% if page.start_time %}
-      <div class="sidebar-section">
-        <h3>Time Part 3</h3>
-        <p>{{ page.start_time_3 }} - {{ page.end_time_3 }}</p>
-      </div>
-    {% endif %}
 
     {% if page.room and page.room != "TBC" %}
       <div class="sidebar-section">
