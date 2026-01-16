@@ -5,6 +5,7 @@ permalink: /programme-empty/
 classes: [full-programme]
 ---
 
+
 {% assign sessions = site.programme-empty | sort: "start_time" %}
 {% assign tracks = "A,B" | split: "," %}
 {% assign days_order = "Monday,Tuesday,Wednesday,Thursday,Friday" | split: "," %}
