@@ -167,6 +167,11 @@ ul.checklist li::before {
     <p class="small-text">
       You will be redirected to the official Durham University registration system.
     </p>
+    
+        <p class="small-text">
+      Lunch and light dinners will be provided to all registered attendees throughout the conference week. These meals are kindly subsidised by our sponsors. Please note that there will not be a dedicated conference dinner event.
+    </p>
+    
   </div>
 
 <div class="info-centred">
@@ -187,6 +192,34 @@ ul.checklist li::before {
     <li>Please get in touch if you have any questions.</li>
   </ul>
  </div>
+ 
+ <div class="info-centred">
+   <h2>Travel</h2>
+  <ul>
+  The University’s official <a href= "https://www.durham.ac.uk/visit-us/" > Visit Us</a>  page provides some general guidance. Here are some further remarks how to get there: <br> <br>
+  
+    <li>If you are arriving at Newcastle International, take the tram (there’s only one) to Newastle Central (less than 40 minute) and then take a train to the South. Durham is 15 minutes away from Newcastle Central</li>
+    <li>Alternatively, you can take a taxi from the airport (should be around 60 GBP for a drive of around 40 minutes in total).</li>
+        <li>From Durham train station, it is a 30-40 minute walk.</li>
+        <li>Taxis should be available from the station and should be around 10-15 GBP. </li>
+        <li> Right in front of the station, there’s a bus stop with two lines </li>
+  </ul>
+    <ul class="checklist">
+    <li>Bus 42 to Mount Oswald. It runs every 30 minutes. Get off at “South Road Colleges” and walk up the hill from there (5 minutes).</li>
+    <li>Bus 41 to University Science Park. Hop off at the final stop.</li>
+  </ul>
+  
+  <div class="info-centred">
+   <h2>Accommodation</h2>
+  <ul>
+  There is no financial or logistics support for accommodation and travel, but we can point to a few hotels nearby that guests of the department use frequently. Participants will need to make all booking:<br> <br>
+  <li> <a href= "https://durham.hotelindigo.com/" > Hotel Indigo </a> </li>
+    <li> <a href= "https://www.premierinn.com/gb/en/hotels/england/county-durham/durham/durham-city-centre-walkergate.html" > Premier Inn </a> </li>
+ <li> <a href= "https://www.guestreservations.com/marriott-durham/booking?utm_source=google&utm_medium=cpc&utm_campaign=991006015&gad_source=1&gad_campaignid=991006015&gclid=CjwKCAiA7LzLBhAgEiwAjMWzCFawpcLQS7qO2pY_GdW2jqAGlVOc8rSwmJVPjCG0iUOj0IbzaN-gYhoCfasQAvD_BwE" > Marriott </a> </li>
+  <li> <a href= "https://www.travelodge.co.uk/hotels/204/Durham-hotel" > Travelodge </a> </li>
+  
+The University has their own <a href= "https://www.durham.ac.uk/event-durham/" > Events team </a>. They also provide B&B accommodation. However, as we approach the new term, it is not likely that they have “spare” rooms.
+    
 
-</section>
+
 
