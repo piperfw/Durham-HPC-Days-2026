@@ -14,7 +14,7 @@ start_time_2: "13:00"
 end_time_2: "14:30"
 
 room: "Mountjoy Centre • Durham University"
-layout: tutorial
+layout: tutorial-2
 category: "Tutorial"
 requirements: "TBC"
 speaker_photos:
