@@ -1,8 +1,7 @@
 ---
-title: " Pocket-Sized Kubernetes:  Building and Deployment with Raspberry Pi
-Clusters"
-speaker: "Lewis Sampson"
-institutions: "The Cloud-Native SIG team and CAKE fellowship support"
+title: "Pocket-Sized Kubernetes: Building and Deployment with Raspberry Pi Clusters"
+speaker: "Lewis Sampson, Piper Fowler-Wright"
+institutions: "Cloud-Native SIG and CAKE"
 day: "Tuesday"
 track: "B"
 start_time: "13:00"
@@ -16,13 +15,15 @@ end_time_2: "14:30"
 room: "Mountjoy Centre • Durham University"
 layout: tutorial-2
 category: "Tutorial"
-requirements: "TBC"
+requirements: "Personal Device/Laptop"
 speaker_photos:
   - "https://shareing-dri.github.io/assets/profilepics/generic.jpg"
+  - "https://www.rfi.ac.uk/wp-content/uploads/2025/04/Piper-Fowler-Wright-600x600.png"
 speaker_links:
   - ""
-institution_logo: ""
-institution_link: " "
+  - "https://www.rfi.ac.uk/our-people/piper-fowler-wright/"
+institution_logo: "https://github.com/cloud-native-sig/website/blob/main/content/images/cloud-native-sig-logo.png?raw=true"
+institution_link: "http://cloudnative-sig.ac.uk/"
 
 description: "This hands-on workshop introduces Kubernetes deployment and
 orchestration from the ground up. Working in small groups, you will
@@ -39,6 +40,6 @@ interact with the clusters.
 
 Target audience: Anyone interested in setting up a Kubernetes cluster
 on their own infrastructure, or getting experience interacting with
-such systems and container orchestration. [This workshop is delivered
-by the Cloud-Native SIG team and CAKE fellowship support]"
+such systems and container orchestration. This workshop is delivered
+by the Cloud-Native SIG team with support from CAKE fellowship.
 ---
