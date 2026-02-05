@@ -3,14 +3,16 @@ title: " Pocket-Sized Kubernetes:  Building and Deployment with Raspberry Pi
 Clusters"
 speaker: "Lewis Sampson"
 institutions: "The Cloud-Native SIG team and CAKE fellowship support"
-day: "Monday"
+day: "Tuesday"
 track: "B"
-start_time: "13:00"
-end_time: "14:30"
-start_time_1: "13:00"
-end_time_1: "14:30"
-start_time_2: "16:30"
-end_time_2: "18:00"
+start_time: "09:00"
+end_time: "10:30"
+
+start_time_1: "09:00"
+end_time_1: "10:30"
+start_time_2: "13:00"
+end_time_2: "14:30"
+
 room: "Mountjoy Centre • Durham University"
 layout: tutorial
 category: "Tutorial"

@@ -5,7 +5,7 @@ permalink: /programme-week/
 classes: [full-programme]
 ---
 
-{% assign all_sessions = site.programme-empty
+{% assign all_sessions = site.programme-2026
   | where_exp: "s", "s.start_time"
   | sort: "start_time" %}
 

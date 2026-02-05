@@ -1,12 +1,12 @@
 ---
 layout: splash
 title: "Conference Programme"
-permalink: /programme-empty/
+permalink: /programme-2026/
 classes: [full-programme]
 ---
 
 
-{% assign sessions = site.programme-empty | sort: "start_time" %}
+{% assign sessions = site.programme-2026 | sort: "start_time" %}
 {% assign tracks = "A,B" | split: "," %}
 {% assign days_order = "Monday,Tuesday,Wednesday,Thursday,Friday" | split: "," %}
 

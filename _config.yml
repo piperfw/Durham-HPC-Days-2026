@@ -117,9 +117,9 @@ collections:
   programme:
     output: true
     permalink: /programme/:path/
-  programme-empty:
+  programme-2026:
     output: true
-    permalink: /programme-empty/:path/
+    permalink: /programme-2026/:path/
   tutorials:
     output: true
     permalink: /tutorials/:name/
